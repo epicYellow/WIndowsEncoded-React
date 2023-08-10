@@ -1,0 +1,50 @@
+@mixin backgroundImages {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin ModalColor {
+  background-color: rgba(41, 29, 137, 0.4);
+  // backdrop-filter: blur(16px);
+}
+
+//example use case
+//long way
+.BackgroundContainerThing {
+  width: 1000px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+//short way
+.BackgroundContainerThing {
+  width: 1000px;
+  height: 500px;
+  background-image: url("https://www.google.com/logos/fnbx/animal_paws/cat_kp_dm.gif");
+  @include backgroundImages;
+}
+
+@mixin LogNReg {
+  padding: 2%;
+  border-radius: 20px;
+  position: fixed;
+  position: fixed;
+  top: 40%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+@mixin Shadow {
+  box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.02),
+    18px 18px 15px rgba(0, 0, 0, 0.02), 45px 45px 38px rgba(0, 0, 0, 0.02),
+    150px 150px 125px rgba(0, 0, 0, 0.02);
+}
+
+@mixin InputShadow {
+  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.04),
+    inset 5px 5px 0px rgba(0, 0, 0, 0.04);
+}

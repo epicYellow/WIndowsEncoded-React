@@ -1,0 +1,114 @@
+@import '../../../index.scss';
+
+
+.MainProfileSection {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    @include Shadow();
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.EditButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #5067EB;
+    border-radius: 10px;
+    background-image: url(../../../Icons/Pen.svg);
+    @include backgroundImages;
+    background-size: 70%;
+}
+
+.ProfileImages{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin-top: 5%;
+}
+
+.ProfileImage {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(196, 194, 194);
+    border-radius: 80px;
+}
+
+.ProfileDisplayBadge {
+    position: relative;
+    top: -40px;
+    left: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 80px;
+    // background-image: url("../../../Img/Gold.png");
+    @include backgroundImages;
+}
+
+.badgee {
+    width: 55px;
+    height: 50px;
+    @include backgroundImages;
+
+}
+
+.Username {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.MemberLength {
+    
+    text-align: center;
+
+}
+
+.Progress {
+    height: 20%;
+    text-align: center;
+    
+}
+
+.TotalAsked {
+    // width: 80%;
+    height: 16%;
+    border: 0.5px solid black;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    text-align: center;
+}
+
+.Scores {
+    margin-top: 10px;
+}
+
+.ScoreText {
+    margin-top: -10px;
+}
+
+.TotalAnswered {
+    // width: 80%;
+    height: 16%;
+    border-bottom: 0.5px solid black;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    text-align: center;
+}
+
+.ReliabilityScore {
+    // width: 80%;
+    height: 16%;
+    border-bottom: 0px solid black;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+     text-align: center; 
+}

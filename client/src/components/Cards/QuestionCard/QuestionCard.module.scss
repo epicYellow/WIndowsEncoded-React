@@ -1,0 +1,260 @@
+@import "../../../index.scss";
+
+.QuestionCard {
+  width: 125vh;
+  height: 190px;
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  @include Shadow();
+  margin-bottom: 2%;
+}
+
+.QuestionCard:hover {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid $Primary_LightBlue;
+  transition: transform 300ms;
+}
+
+.Left {
+  width: 90vh;
+  padding: 1.5%;
+  height: auto;
+  flex: 0 1 90%;
+  align-self: auto;
+}
+
+.Right {
+  width: 3vh;
+  height: auto;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.Container {
+  height: 95%;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.GradientDown {
+  width: 95%;
+  // background-color: rgba(253, 30, 74, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../../Icons/dislike.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 85%;
+  cursor: pointer;
+  background-size: 65%;
+}
+
+.GradientUp {
+  width: 95%;
+  // background-color: rgba(0, 200, 145, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../../Icons/like.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  cursor: pointer;
+  background-size: 65%;
+}
+
+.Middle {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+}
+
+.circle {
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.totalUpNDown {
+  position: relative;
+  left: -40px;
+  font-weight: bold;
+}
+
+.Upvote {
+  width: 90%;
+  background-image: url("../../../Icons/like.svg");
+  @include backgroundImages();
+}
+
+.Downvote {
+  width: 90%;
+  height: 20px;
+  background-image: url("../../../Icons/dislike.svg");
+  @include backgroundImages();
+}
+
+.profileImg {
+  width: 22px;
+  height: 22px;
+  background-image: url("../../../Icons/Profile.svg");
+  float: left;
+  @include backgroundImages;
+}
+
+.profileImg img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.username {
+  margin: 0.1%;
+  margin-left: 1%;
+  float: left;
+  color: $Primary_DarkBlue !important;
+}
+
+.heading {
+  margin-bottom: 0.2%;
+}
+
+.tag {
+  float: left;
+  margin-right: 1%;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: smaller;
+  padding: 0.5% 2%;
+  color: $Primary_DarkBlue;
+  font-weight: 600;
+  z-index: 100;
+  @include ModalColor;
+}
+
+// .tag {
+//   float: left;
+//   margin-right: 1%;
+//   width: fit-content;
+//   border-radius: 10px;
+//   font-size: smaller;
+//   padding: 0.5% 2%;
+//   background-color: $Primary_LightGray;
+// }
+
+.questionDescription {
+  width: 100%;
+  // height: 32%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: $Primary_DarkBlue !important;
+  text-overflow: ellipsis;
+  //   background-color: red;
+}
+
+.Report {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url("../../../Icons/flag-1.svg");
+  @include backgroundImages();
+  background-size: 50%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Report:hover {
+  background-color: #f1f1f1;
+}
+
+.AlreadyUpCon {
+  width: 1px;
+  height: 1px;
+}
+
+.AlreadyUp {
+  position: relative;
+  width: 150px;
+  border-radius: 20px;
+  height: 29px;
+  top: -48px;
+  background-color: #4b4b4b;
+  left: 50px;
+  padding-top: 7px;
+  font-weight: 600;
+  color: white;
+  z-index: 100;
+
+  text-align: center;
+  @include Shadow();
+  cursor: pointer;
+}
+
+.Reported {
+  text-align: center;
+  position: relative;
+  width: 150px;
+  border-radius: 20px;
+  height: 29px;
+  background-color: $Semantic_Red;
+  left: 45px;
+  padding-top: 7px;
+  font-weight: 600;
+  color: white;
+  z-index: 100;
+  cursor: pointer;
+  @include Shadow();
+}
+
+@media (min-height: 1080px) {
+  .QuestionCard {
+    width: 110vh;
+    height: 190px;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    @include Shadow();
+    margin-bottom: 2%;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../../index.scss";
+
+// .body{
+//     height: 100vh;
+// }
+
+.Answer {
+  height: max-content;
+  width: 95%;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  @include Shadow();
+}
+
+.username {
+  padding-right: 15px;
+}
+
+.CodeContainer {
+  width: 120vh;
+}
+
+.answerText {
+  width: 100%;
+  margin-left: 1.5%;
+}
+
+.QuesImage {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  @include backgroundImages();
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.QuesImage:hover {
+  border: 2px solid $Primary_DarkBlue;
+}

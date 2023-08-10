@@ -1,0 +1,54 @@
+@import '../../../index.scss';
+
+.BackgroundBlur {
+    width: 100%;
+    margin-top: -20px;
+    //   margin-left: -20px;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    animation: fadeIn 0.35s;
+    background-color: #f2f2f281;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.loginAlert{
+    text-align: center;
+    padding: 2%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 500;
+    width: 32%;
+    height: 50%;
+    height: auto;
+    border-radius: 20px;
+    @include ModalColor;
+}
+
+.closeButton{
+    width: 25px;
+    padding: 1%;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: $Primary_DarkBlue;
+    text-align: center;
+    float: right;
+    color: white;
+    cursor: pointer;
+    @include Shadow();
+}
+
+.closeButton:hover{
+    background-color: $Primary_LightBlue;
+}

@@ -1,0 +1,155 @@
+@import "../../../index.scss";
+
+.Bounds {
+  width: 17%;
+  height: 100vh;
+  position: fixed;
+}
+
+.leftNav {
+  margin-top: -11px;
+  padding-top: 10%;
+  width: 95%;
+  height: 90vh;
+  @include Shadow();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  // backdrop-filter: blur(16px);
+  border-bottom-right-radius: 20px;
+  // border-right: 3px solid black;
+  position: relative;
+}
+
+.Home {
+  width: 23vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  // padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  // border-bottom: 2px solid $Primary_LightBlue;
+  cursor: pointer;
+}
+
+.Home:hover {
+  transition: ease-in-out 0.3s;
+  @include Shadow();
+  color: white !important;
+  background-color: $Primary_LightBlue;
+  border-radius: 20px;
+}
+
+.Questions {
+  margin-top: 10px;
+  width: 23vh;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  // padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  // border-bottom: 2px solid $Primary_LightBlue;
+  cursor: pointer;
+}
+
+.Questions:hover {
+  transition: ease-in-out 0.3s;
+  @include Shadow();
+  color: white !important;
+  background-color: $Primary_LightBlue;
+  border-radius: 20px;
+}
+
+.IconSpot1 {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10%;
+  background-image: url(../../../Icons/Home.svg);
+  @include backgroundImages;
+  background-size: 60%;
+  @include Shadow();
+}
+
+.IconSpot2 {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10%;
+  background-image: url(../../../Icons/ChatBox.svg);
+  @include backgroundImages;
+  background-size: 60%;
+  @include Shadow();
+}
+
+.homeText {
+  margin-top: 12%;
+}
+
+.text {
+  margin-top: 12%;
+}
+
+.Topics {
+  width: 27vh;
+  height: 27vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  // background-color: green;
+  margin-top: 10vh;
+}
+
+.Logout {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  padding: 5px;
+  width: 25vh;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.Spacer {
+  height: 55vh;
+}
+
+.LogImg {
+  width: 20%;
+  height: 100%;
+  background-image: url(../../../Icons/LogOut.svg);
+  @include backgroundImages;
+  float: left;
+  margin-right: 10%;
+}
+
+.LogoutText {
+  float: left;
+  margin-top: 10px;
+}
+
+.Logout:hover {
+  transition: ease-in-out 0.3s;
+  @include Shadow();
+  background-color: $Primary_LightBlue;
+  color: white;
+}
+
+.active {
+  background: $Primary_LightBlue !important;
+}

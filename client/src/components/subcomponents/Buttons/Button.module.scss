@@ -1,0 +1,50 @@
+@import "../../../index.scss";
+
+.primary {
+  width: 250px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  border-radius: 20px;
+  background-color: $Primary_DarkBlue;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  @include Shadow();
+}
+
+.primary:hover {
+  background-color: $Primary_LightBlue;
+}
+
+.secondary {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.secondary:hover {
+  // background-color: $Primary_LightBlue;
+  border: none;
+}
+
+.tertiary {
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.closebtn {
+  width: 500px;
+  height: 250px;
+  background-color: rgb(225, 46, 46);
+}

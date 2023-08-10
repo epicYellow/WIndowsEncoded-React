@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "rc-progress": "^3.4.0"
+  }
+}

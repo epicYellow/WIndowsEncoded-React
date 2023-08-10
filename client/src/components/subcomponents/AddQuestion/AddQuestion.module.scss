@@ -1,0 +1,251 @@
+@import "../../../index.scss";
+
+.BackgroundBlur {
+  width: 100%;
+  margin-top: 20px;
+  //   margin-left: -20px;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  animation: fadeIn 0.35s;
+  background-color: #f2f2f281;
+}
+
+p {
+  margin-bottom: 4%;
+  color: $Primary_DarkBlue;
+  font-size: small !important;
+}
+
+img {
+  margin-left: -20px;
+  width: 100px;
+  height: 100px;
+  @include backgroundImages;
+}
+
+.upload_btn_wrapper img {
+  margin-top: -35px;
+}
+
+.TextRed {
+  color: red;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.addQuestionCard {
+  padding: 2%;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 500;
+  width: 32%;
+  height: max-content;
+  height: auto;
+  border-radius: 20px;
+  @include ModalColor;
+}
+
+.left {
+  margin-top: -0.3%;
+  float: left;
+  margin-right: 2%;
+}
+
+.closeButton {
+  width: 25px;
+  padding: 1%;
+  margin-top: 5%;
+  margin-right: 10%;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: $Primary_DarkBlue;
+  text-align: center;
+  float: right;
+  color: white;
+  cursor: pointer;
+  @include Shadow();
+}
+
+.closeButton:hover {
+  background-color: $Primary_LightBlue;
+}
+
+.Preview {
+  margin-top: 2%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 20px;
+  border: 1px solid $Primary_LightGray;
+  margin-bottom: 2vh !important;
+  @include backgroundImages;
+  // background-size: 30%;
+  float: left;
+}
+
+.Preview:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.textBox {
+  width: 71.7%;
+  float: left;
+  border-radius: 20px;
+  height: 40px;
+  padding: 3%;
+  background-color: white;
+}
+
+.codeBox {
+  width: 93%;
+  border-radius: 20px;
+  height: 60px;
+  padding: 3%;
+  background-color: white;
+}
+
+// Image Input
+.PfBlockUp {
+  width: 100px;
+  height: 100px;
+  background-color: $Primary_DarkBlue;
+  border-radius: 20px;
+  margin-right: 3%;
+  @include Shadow();
+  cursor: pointer;
+  float: left;
+}
+
+.PfBlockUp:hover {
+  background-color: $Primary_LightBlue;
+}
+
+.upload_btn_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  height: 100px;
+  padding-top: 35%;
+  width: 95%;
+  cursor: pointer;
+}
+
+.btn {
+  border: 0px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: -10%;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.upload_btn_wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  // display: none;
+}
+
+select {
+  margin: 0;
+  margin-bottom: 4%;
+  width: 98.5%;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  @include Shadow();
+  cursor: pointer;
+}
+
+#prev_img {
+  width: 95%;
+  height: 95%;
+  background-color: green;
+  @include backgroundImages;
+}
+
+// QUESTION PREVIEW
+.questionPreview {
+  padding: 2%;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 500;
+  width: 20%;
+  height: max-content;
+  height: auto;
+  border-radius: 20px;
+  @include ModalColor;
+  @include Shadow;
+}
+
+.questionIntro {
+  width: 100%;
+}
+
+.profileImg {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../Icons/Profile.svg");
+  float: left;
+  @include backgroundImages;
+}
+
+.username {
+  margin: 0.1%;
+  // float: left;
+}
+
+.headingQuestion {
+  margin-top: -5%;
+  margin-bottom: 1%;
+}
+
+.questionPreview p {
+  margin-bottom: 0 !important;
+}
+
+.questionDetails {
+  width: 100%;
+}
+
+.questionImage {
+  width: 30%;
+  height: 15vh;
+  border-radius: 20px;
+  margin-right: 3%;
+  float: left;
+  @include backgroundImages;
+}
+
+.questionDescription {
+  width: 90%;
+  height: 125px;
+}

@@ -1,0 +1,59 @@
+@import "../../../index.scss";
+
+.FlaggedQuestionAdmin {
+    width: 95%;
+    height: 110px;
+    border-radius: 10px;
+    background-color: white;
+    
+    margin-top: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.Flaggedhere {
+    background-color: white;
+    width: 200px;
+}
+
+.flaggedTag {
+float: left;
+  margin-right: 1%;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: smaller;
+  padding: 0.5% 2%;
+  color: $Primary_DarkBlue;
+  font-weight: 600;
+  z-index: 100;
+  @include ModalColor;
+}
+
+.deleteButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: $Semantic_Red;
+    border-radius: 10px;
+    background-image: url(../../../Icons/bin.svg);
+    @include backgroundImages;
+    background-size: 70%;
+}
+
+.Delete {
+    color: white;
+    background-color: red;
+}
+
+.Username {
+    margin: 0;
+  color: $Primary_DarkBlue !important;
+
+}
+
+.Title {
+    margin: 0;
+    width: 90%;
+}

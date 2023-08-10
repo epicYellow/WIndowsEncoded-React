@@ -1,0 +1,106 @@
+@import "../../../index.scss";
+
+.BackgroundBlur {
+    width: 100%;
+    margin-top: 20px;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    animation: fadeIn 0.35s;
+    background-color: #f2f2f281;
+  
+    p {
+      margin-bottom: 4%;
+      color: $Primary_DarkBlue;
+      font-size: small !important;
+    }
+  } 
+
+
+
+
+.close {
+    
+        width: 25px;
+        padding: 1%;
+        margin-top: 5%;
+        margin-right: 2%;
+        font-size: larger;
+        font-weight: bolder;
+        border-radius: 10px;
+        background-color: $Primary_DarkBlue;
+        text-align: center;
+        float: right;
+        color: white;
+        cursor: pointer;
+        @include Shadow();
+      
+}
+
+
+.Modal {
+    padding: 2%;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 500;
+    width: 50%;
+    height: 600px;
+    position: relative;
+    border-radius: 20px;
+    @include ModalColor;
+    overflow: scroll;
+}
+
+
+.FlaggedQuestion {
+    width: 95%;
+    height: 90px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+.UserName {
+  margin: 0;
+}
+
+.Title {
+  margin: 0;
+}
+
+
+
+.Tag {
+  float: left;
+  margin-right: 1%;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: smaller;
+  padding: 0.5% 2%;
+  color: $Primary_DarkBlue;
+  font-weight: 600;
+  z-index: 100;
+  @include ModalColor;
+}
+
+
+.DeleteButton {
+  float: right;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: $Semantic_Red;
+  border-radius: 10px;
+  background-image: url(../../../Icons/bin.svg);
+  @include backgroundImages;
+  background-size: 70%;
+}

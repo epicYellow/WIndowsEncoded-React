@@ -1,0 +1,54 @@
+h1{
+    font-size: 36px;
+    margin-top: 0;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+h3{
+    font-size: 22px;
+    margin-top: 0;
+}
+
+h4{
+    margin-top: 0; 
+}
+
+a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+input{
+    padding: 0;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    margin-top: 0; 
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    @include InputShadow();
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $Primary_LightBlue;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

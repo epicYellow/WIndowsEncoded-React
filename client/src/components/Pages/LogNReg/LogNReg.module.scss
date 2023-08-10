@@ -1,0 +1,344 @@
+@import "../../../index.scss";
+
+.LogNReg {
+  height: 100vh;
+  text-align: center;
+}
+
+.Login {
+  left: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: gold;
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  height: max-content;
+  border-radius: 20px;
+  z-index: 2;
+  transition: width 1s, left 1s, opacity 0.5s, box-shadow 0.2s;
+  @include LogNReg();
+  @include Shadow();
+}
+
+.Hover {
+  cursor: pointer;
+}
+
+.Signup {
+  left: 35%;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 450px;
+  height: max-content;
+  z-index: 3;
+  opacity: 100%;
+  transition: width 1s, left 1s, opacity 0.5s;
+  @include LogNReg();
+  @include Shadow();
+}
+
+.SignupBack {
+  left: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 450px;
+  height: max-content;
+  z-index: 1;
+  opacity: 0%;
+  transition: width 1s, left 1s, z-index 1s, opacity 0.5s;
+  @include LogNReg();
+}
+
+.SignupText {
+  left: 70%;
+  margin: 0 auto;
+  margin-top: 12%;
+  width: 450px;
+  height: 60vh;
+  z-index: 1;
+  opacity: 100%;
+  // background-color: green;
+  // transition-delay: 10s;
+  transition: width 1s, left 1s, opacity 0.5s;
+  @include LogNReg();
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.SignupTextBack {
+  left: 35%;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 450px;
+  height: 60vh;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0);
+  opacity: 0%;
+  // background-color: green;
+  // transition-delay: 10s;
+  transition: width 1s, left 0.25s, opacity 0.1s;
+  @include LogNReg();
+  background-color: rgba(0, 0, 0, 0);
+}
+
+//https://css-tricks.com/snippets/css/typewriter-effect/
+
+.SignupText h2 {
+  width: max-content;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 10px solid rgba(255, 255, 255, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2s steps(40, end), blink-caret 0.8s step-end infinite;
+}
+
+.SignupText li {
+  width: max-content;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 10px solid rgba(255, 255, 255, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1.65s steps(40, end), blink-caret 0.8s step-end infinite;
+}
+
+.SignupText p {
+  width: max-content;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 10px solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2s steps(40, end), blink-caret 0.8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.LoginBack {
+  left: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 600px;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 5%;
+  transition: width 1s, left 1s, z-index 1s, opacity 0.5s, box-shadow 2s;
+  @include LogNReg();
+  box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.15), 18px 18px 15px rgba(0, 0, 0, 0.1),
+    45px 45px 38px rgba(0, 0, 0, 0.1), 150px 150px 125px rgba(0, 0, 0, 0.1);
+}
+
+.LogLeft {
+  width: 50%;
+  height: max-content;
+  float: left;
+}
+
+.LogRight {
+  width: 50%;
+  float: left;
+  height: 50vh;
+  margin-top: 9vh;
+}
+
+.LogImage {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 2vh;
+  background-image: url("../../../Img/Computer-01.png");
+  @include backgroundImages;
+}
+
+.margin {
+  margin: 0 auto;
+  margin-bottom: 10px !important;
+}
+
+.Button {
+  text-align: center;
+}
+
+.Spacing {
+  margin-bottom: 2vh !important;
+}
+
+.Form {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Preview {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid $Primary_LightGray;
+  margin-bottom: 2vh !important;
+  @include backgroundImages;
+  background-size: 70%;
+}
+
+.Preview:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.InSpacing {
+  height: 8px;
+}
+
+.Red {
+  color: red;
+  cursor: pointer;
+}
+
+.Cursor {
+  cursor: pointer;
+}
+
+.closeButton {
+  position: fixed;
+  width: 25px;
+  padding: 1%;
+  top: 2vh;
+  right: 2vh;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: $Primary_DarkBlue;
+  text-align: center;
+  float: right;
+  color: white;
+  cursor: pointer;
+  @include Shadow();
+}
+
+.White {
+  color: white;
+}
+
+.closeButton:hover {
+  background-color: $Primary_LightBlue;
+}
+.ConfirmationStart {
+  width: 20%;
+  height: 220px;
+  opacity: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  @include ModalColor();
+  color: white;
+  position: absolute;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 800;
+  border-radius: 25px;
+  @include Shadow();
+  transition: padding 0.5s, opacity 0.2, width 0.5s, height 0.5s;
+  transition-delay: 1s;
+}
+
+.Confirmation {
+  width: 0%;
+  height: 0px;
+  opacity: 0%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  @include ModalColor();
+  position: absolute;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 800;
+  border-radius: 25px;
+  transition: padding 0.5s, opacity 0.2s, width 0.5s, height 0.5s;
+}
+
+.passwordShow img {
+  float: left !important;
+}
+
+.Loading {
+  width: 25px;
+  height: 25px;
+  padding: 0.5%;
+  background-image: url("../../../Icons/rotate-left.svg");
+  @include backgroundImages();
+  animation: rotation 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: 0 auto;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}

@@ -1,0 +1,179 @@
+@import "../../../index.scss";
+
+.BackgroundBlur {
+  width: 100%;
+  margin-top: 20px;
+  //   margin-left: -20px;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  animation: fadeIn 0.35s;
+  background-color: #f2f2f281;
+
+  p {
+    margin-bottom: 4%;
+    color: $Primary_DarkBlue;
+    font-size: small !important;
+  }
+}
+
+.TextRed {
+  color: red;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.EditQuestionCard {
+  padding: 2%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 500;
+  width: 32%;
+  height: max-content;
+  height: auto;
+  border-radius: 20px;
+  @include ModalColor;
+}
+
+.closeButton {
+  width: 25px;
+  padding: 1%;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: $Primary_DarkBlue;
+  text-align: center;
+  float: right;
+  color: white;
+  cursor: pointer;
+  @include Shadow();
+}
+
+.closeButton:hover {
+  background-color: $Primary_LightBlue;
+}
+
+.Preview {
+  margin-top: 2%;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid $Primary_LightGray;
+  margin-bottom: 2vh !important;
+  @include backgroundImages;
+  // background-size: 30%;
+  float: left;
+}
+
+.Preview:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.textBox {
+  width: 93%;
+  float: left;
+  border-radius: 20px;
+  height: 40px;
+  padding: 3%;
+  background-color: white;
+}
+
+.codeBox {
+  width: 93%;
+  border-radius: 20px;
+  height: 60px;
+  padding: 3%;
+  background-color: white;
+}
+
+// Image Input
+.PfBlockUp {
+  width: 100px;
+  height: 100px;
+  background-color: $Primary_DarkBlue;
+  border-radius: 20px;
+  margin-right: 3%;
+  @include Shadow();
+  cursor: pointer;
+  float: left;
+}
+
+.PfBlockUp:hover {
+  background-color: $Primary_LightBlue;
+}
+
+.upload_btn_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  height: 100px;
+  padding-top: 35%;
+  width: 95%;
+  cursor: pointer;
+}
+
+.btn {
+  border: 0px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: -10%;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.upload_btn_wrapper img {
+  width: 100%;
+  margin-top: -32px;
+  margin-left: 4%;
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.upload_btn_wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  // display: none;
+}
+
+select {
+  margin: 0;
+  margin-bottom: 4%;
+  width: 98.5%;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  @include Shadow();
+  cursor: pointer;
+}
+
+#prev_img {
+  background-size: contain;
+  background-position: center;
+}

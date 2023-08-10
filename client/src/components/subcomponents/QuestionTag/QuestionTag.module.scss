@@ -1,0 +1,14 @@
+@import "../../../index.scss";
+
+.MainTag {
+  float: left;
+  margin-right: 1%;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: smaller;
+  padding: 0.5% 2%;
+  color: $Primary_DarkBlue;
+  font-weight: 600;
+  z-index: 100;
+  @include ModalColor;
+}

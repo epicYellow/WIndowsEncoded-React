@@ -1,0 +1,133 @@
+@import "../../../index.scss";
+
+.Login {
+  width: 80%;
+  float: left;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin-top: 0 !important;
+  border: none;
+  background-color: #f9f9f9;
+  @include InputShadow();
+}
+
+.InputWidth {
+  width: 99%;
+  height: 40px;
+  display: flex;
+}
+
+.Search {
+  margin-top: 0 !important;
+  margin-left: 35%;
+  width: 30%;
+  height: 35px;
+  background-color: $Primary_White;
+  border-radius: 20px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  // background-color: red;
+  @include InputShadow();
+  border: none;
+  float: left;
+}
+
+.ModalInput {
+  margin: 0;
+  width: 96%;
+  height: 35px;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  @include InputShadow();
+}
+
+.Icon {
+  width: 3%;
+  margin-top: 1px;
+  position: relative;
+  right: 34%;
+  float: left;
+  height: 35px;
+  background-image: url("../../../Icons/search.svg");
+  @include backgroundImages;
+  background-size: 60%;
+}
+
+.eyeOpen {
+  width: 3.8%;
+  margin-top: 1px;
+  position: relative;
+  right: 9vh;
+  float: left;
+  height: 35px;
+  background-image: url("../../../Icons/eye-open.svg");
+  @include backgroundImages;
+  background-size: 120%;
+  cursor: pointer;
+}
+
+.eyeClosed {
+  width: 3.8%;
+  margin-top: 1px;
+  position: relative;
+  right: 9vh;
+  float: left;
+  height: 35px;
+  background-image: url("../../../Icons/eye-closed.svg");
+  @include backgroundImages;
+  background-size: 120%;
+  cursor: pointer;
+}
+
+.Valid {
+  width: 3.8%;
+  // margin-left: 10px;
+  position: relative;
+  right: 3.5vh;
+  float: left;
+  height: 35px;
+  background-image: url("../../../Icons/InputValid.svg");
+  @include backgroundImages;
+  background-size: 110%;
+  cursor: pointer;
+}
+
+.InValid {
+  width: 3.8%;
+  position: relative;
+  right: 3.8vh;
+  float: left;
+  height: 35px;
+  background-image: url("../../../Icons/InputInValid.svg");
+  @include backgroundImages;
+  background-size: 110%;
+  cursor: pointer;
+}
+
+.HoverModalCon {
+  width: 1px;
+  height: 1px;
+}
+
+.HoverModal {
+  position: relative;
+  left: 6vh;
+  width: max-content;
+  height: 30px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-weight: 800;
+  @include Shadow();
+  background-color: $Semantic_Red;
+  border-radius: 20px;
+}
+
+.hide {
+  display: none;
+}

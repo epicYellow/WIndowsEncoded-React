@@ -1,0 +1,18 @@
+$primary_dark: #2D2D2F;
+$Primary_gray: #4D4D4F;
+$Primary_LightGray: #d6d6d6;
+$Primary_DarkBlue: #291D89;
+$Primary_LightBlue: #5067EB;
+$Primary_White: #FFFFFF;
+
+$Semantic_Red: #FD1E4A;
+$Semantic_HoverRed: #fc4d70;
+$Semantic_Green: #00C891;
+$Semantic_Orange: #FF8C4B;
+
+//example use case
+.BackgroundContainerThing{
+    width: 1000px;
+    height: 500px;
+    background-color: $primary_dark;
+}

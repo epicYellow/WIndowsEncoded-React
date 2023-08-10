@@ -1,0 +1,72 @@
+@import "../../../index.scss";
+
+.BackgroundBlur {
+    width: 100%;
+    margin-top: 20px;
+    //   margin-left: -20px;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    animation: fadeIn 0.35s;
+    background-color: #f2f2f281;
+  
+    p {
+      margin-bottom: 4%;
+      color: black;
+      font-size: small !important;
+      text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.DeleteModal{
+    text-align: center;
+    padding: 2%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 500;
+    width: 32%;
+    height: 50%;
+    height: auto;
+    border-radius: 20px;
+    @include ModalColor;
+}
+
+.Warning{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 3%;
+    background-image: url('../../../Icons/warning.svg');
+    @include backgroundImages;
+}
+
+.WarningButton{
+    width: 180px;
+    margin-left: 3%;
+    height: 40px;
+    background-color: white;
+    color: white;
+    border-radius: 20px;
+    background-color: $Semantic_Red;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    @include Shadow();
+    margin-top: 3%;
+}
+
+.WarningButton:hover{
+    background-color: $Semantic_HoverRed;
+}

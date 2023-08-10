@@ -1,0 +1,45 @@
+@import "../../../index.scss";
+
+.Container {
+  width: 60%;
+  //   margin-left: -20px;
+  height: 60vh;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  animation: fadeIn 0.35s;
+  border-radius: 20px;
+  @include ModalColor();
+  overflow: auto;
+  padding: 2%;
+}
+
+.Image {
+  margin: 0 auto;
+  width: 95%;
+  height: 480px;
+  background-color: white;
+  border-radius: 20px;
+  @include backgroundImages();
+}
+
+.closeButton {
+  width: 25px;
+  padding: 1%;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: $Primary_DarkBlue;
+  text-align: center;
+  float: right;
+  color: white;
+  cursor: pointer;
+  @include Shadow();
+}
+
+.closeButton:hover {
+  background-color: $Primary_LightBlue;
+}

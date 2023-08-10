@@ -1,0 +1,84 @@
+@import "../../../index.scss";
+
+@mixin ContainerStyling {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  position: fixed;
+  padding: 20px;
+  width: 75%;
+  height: 75vh;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2.6px rgba(0, 0, 0, 0.017),
+    0px 0px 5.9px rgba(0, 0, 0, 0.02), 0px 0px 10.2px rgba(0, 0, 0, 0.021),
+    0px 0px 16.3px rgba(0, 0, 0, 0.022), 0px 0px 25.1px rgba(0, 0, 0, 0.025),
+    0px 0px 39.2px rgba(0, 0, 0, 0.03), 0px 0px 65.1px rgba(0, 0, 0, 0.042),
+    0px 0px 130px rgba(0, 0, 0, 0.1);
+}
+
+.Container {
+  top: 100%;
+  left: 50%;
+  opacity: 100%;
+  transform: translate(-50%, 5%);
+  @include ContainerStyling();
+  transition: opacity 200ms, left 100ms, transform 50ms;
+
+  h3 {
+    color: #2b2b2b;
+  }
+
+  p {
+    color: #2b2b2b;
+  }
+}
+
+.ContainerClosed {
+  opacity: 0%;
+  @include Shadow();
+  top: 100%;
+  left: 0%;
+  transform: translate(-100%, 5%);
+  @include ContainerStyling();
+  transition: opacity 200ms, left 100ms, transform 50ms;
+}
+
+.Underline {
+  text-decoration: underline;
+  font-size: 36px;
+  text-decoration-color: $Primary_LightBlue;
+}
+
+.ResultContainer {
+  width: 95%;
+  height: 60vh;
+  overflow: auto;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 5%;
+}
+
+.Loading {
+  width: 25px;
+  height: 25px;
+  padding: 0.5%;
+
+  background-image: url("../../../Icons/rotate-left.svg");
+  @include backgroundImages();
+  animation: rotation 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}

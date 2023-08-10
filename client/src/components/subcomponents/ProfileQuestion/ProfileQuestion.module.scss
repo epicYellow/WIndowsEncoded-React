@@ -1,0 +1,89 @@
+@import '../../../index.scss';
+
+
+.ProfQ {
+    width: 98%;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 10px;
+    @include Shadow();
+    cursor: pointer;
+}
+
+.ProfQ:hover {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 3px solid $Primary_LightBlue;
+    transition: transform 300ms;
+
+}
+
+.Qtitle {
+    margin-left: 20px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+.TagSection {
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+}
+
+.DeleteButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: $Semantic_Red;
+    border-radius: 10px;
+    background-image: url(../../../Icons/bin.svg);
+    @include backgroundImages;
+    background-size: 70%;
+}
+
+.DeleteButton:hover {
+    background-color: $Semantic_HoverRed;
+}
+
+.EditButton {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: $Primary_DarkBlue;
+    border-radius: 10px;
+    background-image: url(../../../Icons/Pen.svg);
+    @include backgroundImages;
+    background-size: 70%;
+}
+
+.EditButton:hover {
+    background-color: $Primary_LightBlue;
+}
+
+.Score {
+    text-align: center;
+    margin-top: 1px;
+}
+
+
+.tag {
+    float: left;
+    margin-right: 1%;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 0.5% 2%;
+    color: $Primary_DarkBlue;
+    font-weight: 600;
+    z-index: 100;
+    @include ModalColor;
+}

@@ -1,0 +1,153 @@
+@import "../../../index.scss";
+
+.LandingArea {
+  padding: 10px;
+  display: flex;
+  color: #2b2b2b;
+}
+
+.Block {
+  background-image: url("../../../Img/Male-3.png");
+  @include backgroundImages();
+  background-size: 50%;
+  width: 18%;
+  height: 30vh;
+  margin-right: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  @include Shadow();
+  border-radius: 20px;
+}
+
+.LanContent {
+  padding-right: 20px;
+  padding: 15px;
+}
+
+.Heading {
+  padding: 15px;
+}
+
+.Row {
+  height: 150px;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 5% !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.Container {
+  @include backgroundImages();
+  background-size: 40%;
+  background-position: center 120%;
+  width: 25%;
+  margin-right: 20px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 1);
+  @include Shadow();
+  margin-left: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ContainerImageOne {
+  background-image: url(../../../Img/questions.png);
+}
+
+.ContainerImageTwo {
+  background-image: url(../../../Img/Answer1-01.png);
+}
+
+.ContainerImageThree {
+  background-image: url(../../../Img/Badges-01.png);
+}
+
+.ContainerImageThree {
+  background-image: url(../../../Img/Badges-01.png);
+}
+
+.Container:hover {
+  border: 3px solid $Primary_LightBlue;
+  transition: transform 300ms;
+}
+
+.Container2 {
+  width: 33%;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background-image: url("../../../Img/Badges/Silver.png");
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.Container2:hover {
+  border: 3px solid $Primary_LightBlue;
+  transition: transform 300ms;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.ImageOne {
+  background-image: url("../../../Img/HtmlLogo.png");
+  width: 100%;
+  height: 100px;
+  background-position: center center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.ImageTwo {
+  background-image: url("../../../Img/JavaScript\ logo.png");
+  width: 100%;
+  height: 100px;
+  background-position: center center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.ImageThree {
+  background-image: url("../../../Img/React-icon.png");
+  width: 100%;
+  height: 100px;
+  background-position: center center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.ImageFour {
+  background-image: url("../../../Img//css.png");
+  width: 100%;
+  height: 100px;
+  background-position: center center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.Line {
+  background-color: $Semantic_Red;
+}
+
+.questions {
+  background-position: center;
+  @include backgroundImages();
+  width: 80%;
+  height: 80%;
+  background-repeat: no-repeat;
+}

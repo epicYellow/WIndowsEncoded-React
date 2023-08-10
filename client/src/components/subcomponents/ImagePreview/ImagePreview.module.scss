@@ -1,0 +1,30 @@
+@import "../../../index.scss";
+
+.ContainerImage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 84vh;
+  padding: 15px;
+  @include ModalColor;
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.Image {
+  @include backgroundImages();
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+}

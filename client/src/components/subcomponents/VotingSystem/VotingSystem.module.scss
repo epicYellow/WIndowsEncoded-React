@@ -1,0 +1,28 @@
+@import '../../../index.scss';
+
+.votingSystem{
+    float: left;
+}
+
+.chev_up{
+    margin-right: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../../Icons/chevron_up.svg');
+    @include backgroundImages;
+    cursor: pointer;
+}
+
+.chev_down{
+    margin-right: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../../Icons/chevron_down.svg');
+    @include backgroundImages;
+    cursor: pointer;
+}
+
+
+.votes{
+    margin: 0;
+}
